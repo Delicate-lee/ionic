@@ -1,0 +1,14 @@
+<ion-view view-title="模态框" cache-view="false">
+  <button class="button light-bg" ng-click="openModal()">打开模态框</button>
+  <button class="button positive-bg" ng-click="show()">打开其他功能</button>
+  <button class="button assertive-bg" ng-click="showAlert()">弹出框</button>
+  <button class="button royal-bg" ng-click="showPopup()">show</button>
+  <script id="modal.html" type="text/ng-template">
+
+    <ion-modal-view class="calm-bg">
+      <button ng-click="closeModal()">关闭模态框</button>
+
+      <h1 class="title">模态框</h1>
+    </ion-modal-view>
+  </script>
+</ion-view>

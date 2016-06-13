@@ -1,0 +1,27 @@
+<ion-view view-title="列表标签">
+  <ion-list can-swipe="true" >
+    <ion-item >1
+      <ion-option-button class="calm-bg" >删除</ion-option-button>
+      <ion-option-button class="assertive-bg">隐藏</ion-option-button>
+    </ion-item>
+    <ion-item>2
+    <ion-delete-button>delete</ion-delete-button>
+    </ion-item>
+    <ion-item>3
+      <ion-reorder-button>sort</ion-reorder-button>
+    </ion-item>
+    <ion-item>
+      <ion-checkbox  ng-checked="true">checkbox</ion-checkbox>
+      checkbox的状态是{{value}}
+      <ion-checkbox ng-model="value">checkbox</ion-checkbox>
+    </ion-item>
+    <ion-item>
+      radio的选中值是{{choice.choice}}
+      <ion-radio ng-repeat="item in contents" ng-model="choice.choice" ng-value="item.english">{{item.name}}</ion-radio>
+    </ion-item>
+    <ion-item>
+      toggle的状态是{{toggler}}
+      <ion-toggle ng-checked="true" toggle-class="toggle-calm" ng-model="toggler">toggle</ion-toggle>
+    </ion-item>
+  </ion-list>
+</ion-view>
